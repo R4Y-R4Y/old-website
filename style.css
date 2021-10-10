@@ -39,4 +39,12 @@
     list-style: none;
     display: inline-block;
     font-family: 'Comfortaa', 'Light';
+    margin-left: 15px;
+}
+
+.navbar .menu li a{
+    color: seashell;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
 }
