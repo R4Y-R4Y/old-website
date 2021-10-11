@@ -14,7 +14,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: green;
+    background: linear-gradient(to right, green, yellow);
     font-family: 'Comfortaa', 'Bold';
 }
 
@@ -43,8 +43,48 @@
 }
 
 .navbar .menu li a{
-    color: seashell;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: red;
+}
+
+.home{
+    display: flex;
+    background-image: url("images/background.png");
+    height: 100vh;
+    color: black;
+    min-height: 1000px;
+}
+
+.home .max-width{
+    margin: auto 0px auto 100px;
+}
+.home .home-content .text1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Comfortaa', 'Light';
+}
+
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Comfortaa', 'Bold';
+}
+
+.home .home-content .text3{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-left: 30px;
+    font-family: 'Comfortaa', 'Medium';
+}
+
+.home .home-content .text3 span{
+    color: yellow;
 }
