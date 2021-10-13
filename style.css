@@ -70,7 +70,7 @@
 }
 
 .navbar .menu li a:hover{
-    color: black;
+    color: white;
     transition: color 0.3s ease;
 }
 
@@ -80,10 +80,17 @@
     color: red;
     font-size: 25px;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menu-but:hover{
+    color: white;
 }
 
 .navbar.sticky .menu-but{
     color: black;
+}
+.navbar.sticky .menu-but:hover{
+    color: red;
 }
 
 
