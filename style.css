@@ -60,6 +60,10 @@
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+.navbar .menu li a:hover{
+    color: white;
+    transition: color 0.3s ease;
+}
 
 .navbar.sticky .menu li a{
     color:black;
@@ -69,10 +73,7 @@
     color: red;
 }
 
-.navbar .menu li a:hover{
-    color: white;
-    transition: color 0.3s ease;
-}
+
 
 /* menu but stuff */
 
@@ -133,8 +134,34 @@
 }
 
 /* responsive media query */
-@media(max-width: 991px){
+@media(max-width: 971px){
     .max-width{
         padding: 0 30px
+    }
+    .menu-but{
+        display: block;
+        z-index: 1000;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 100%;
+        top: 0;
+        background: linear-gradient(to top,green,yellow);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 40px;
     }
 }

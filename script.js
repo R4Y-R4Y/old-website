@@ -7,4 +7,8 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");            
         }
     })
+    $('.menu-but').click(function(){
+        $('.navbar .menu').toggleClass('active')
+        $('.menu-but i').toggleClass('fas fa-bars fas fa-times')
+    });
 })
