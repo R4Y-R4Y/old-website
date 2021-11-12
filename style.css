@@ -20,6 +20,7 @@ section{
     padding: 30px 0;
     font-family: 'Comfortaa', 'Bold';
     transition: all 0.3s ease;
+    z-index: 10000;
 }
 
 .navbar.sticky{
@@ -130,7 +131,8 @@ section{
 
 /* about stuff */
 .about .about-content
-,.education .education-content{
+,.education .education-content
+,.skills .skills-content{
     font-family: 'Comfortaa';
     display: flex;
     align-items: center;
@@ -145,6 +147,13 @@ section{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+}
+
+.skill-title{
+    font-family: 'Comfortaa';
+    font-size: 40px;
+    font-weight: 500;
+    padding: 60px 0 40px 0;
 }
 
 .title span{
@@ -208,7 +217,27 @@ section{
     padding: 30px;
     border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.education .education-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.education .education-content .card:hover{
+    background: linear-gradient(to top, green, yellow);
+    transition: color 0.3s ease;
+}
+
+.education .education-content .card:hover i{
+    color: green;
+    transition: color 0.3s ease;
+}
+
+.education .education-content .card:hover .box{
+    transform: scale(1.05);
+}
+
 
 .education .education-content .card i{
     font-size: 75px;
@@ -218,9 +247,73 @@ section{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    
+}
+.skills .list{
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px;
+    width: 200%
+}
+
+.skills .cell{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin-right: 180px ;
+    
+}
+.skills .cell i{
+    
+    top: 0px;
+    font-size: 200px;
+    color: green;
+}
+.skills .void i{
+    top: 0px;
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0);
+}
+.skills .cell .logo img{
+    position: absolute;
+    margin: 41px 41px;
+    top: 0px;
+    height: 120px;
+    width: 120px;
+    
+}
+
+.skills .cell .logo img[alt="Blender logo no text"]{
+    height: 98px;
+    width: 120px;
+    margin: 50px 38px;
+}
+
+.skills .cell .logo img[alt="Maya Logo"]{
+    height: 110px;
+    width: 110px;
+    margin: 45px 45px;
+}
+
+.skills .cell .logo img[alt="CSS3 logo and wordmark"]{
+    height: 122px;
+    width: 86.5px;
+    margin: 38px 57px;
+}
+.skills .cell .logo img[alt="JavaScript-logo"]{
+    height: 105px;
+    width: 105px;
+    margin: 49px 49px;
+}
+
+.skills .cell .name{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    
 }
 /* responsive media query */
-@media(max-width: 1300px){
+@media(max-width: 1400px){
     .about .about-content .col-l img{
         height: 350px;
         width: 350px;
@@ -233,9 +326,32 @@ section{
     .about .about-content .col-r{
         flex: 100%;
     }
+    .education .education-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .cell, .skills .void{
+        zoom: 60%;
+        margin: 30px;
+        padding-left: 20px;
+    }
+    .skills .skill-title{
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+    }
+    .skills .cell .name{
+        font-size: 35px;
+    }
+    .skills .list{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 0 0;
+        width: 200%;
+        flex-direction: row;
+    }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1100px){
     .max-width{
         padding: 0 30px
     }
@@ -279,6 +395,9 @@ section{
         margin: 20px;
         font-size: 40px;
     }
+    .title{
+        font-size: 30px;
+    }
 
     .home .home-content .text2{
         font-size: 50px;
@@ -286,4 +405,18 @@ section{
     .home .home-content .text3{
         font-size: 30px;
     }
+    .education .education-content .card{
+        width: 100%;
+    }
+
+    .skills .cell, .skills .void{
+        zoom: 50%;
+        margin: 30px;
+        padding-left: 20px;
+    }
+
+    .skills .max-width{
+        padding: 0;
+    }
+    
 }
