@@ -331,7 +331,7 @@ section{
         margin-bottom: 20px;
     }
     .skills .cell, .skills .void{
-        zoom: 60%;
+        zoom: 80%;
         margin: 30px;
         padding-left: 20px;
     }
@@ -410,9 +410,10 @@ section{
     }
 
     .skills .cell, .skills .void{
-        zoom: 50%;
+        zoom: 70%;
         margin: 30px;
         padding-left: 20px;
+        align-items: center;
     }
 
     .skills .max-width{
