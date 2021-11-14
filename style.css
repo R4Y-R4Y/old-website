@@ -369,9 +369,9 @@ section{
     color: red;
     text-align: center;
 }
-.contact .contact-content .icons .row img{
+.contact .contact-content .icons .row svg{
     fill: red;
-    zoom: 28%;
+    zoom: 30%;
 }
 .contact .contact-content .left .head{
     font-size: 110%;
@@ -420,6 +420,19 @@ section{
 .contact .contact-content .right form .button button{
     height: 100%;
     width: 100%;
+    border: 4px solid green;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0);
+    color: green;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.contact .contact-content .right form .button button:hover{
+    color: yellow;
+    background: green;
+    border: 0px;
+    transition: color 0.3s ease;
 }
 .contact .contact-content .right form input::placeholder
 ,.contact .contact-content .right form textarea::placeholder{
