@@ -132,7 +132,8 @@ section{
 /* about stuff */
 .about .about-content
 ,.education .education-content
-,.skills .skills-content{
+,.skills .skills-content
+,.contact .contact-content{
     font-family: 'Comfortaa';
     display: flex;
     align-items: center;
@@ -274,6 +275,15 @@ section{
     font-size: 200px;
     color: rgba(0, 0, 0, 0);
 }
+.skills .cell i[alt="red"]{
+    color: red;
+}
+.skills .cell i[alt="yellow"]{
+    color: yellow;
+}
+.skills .cell i[alt="black"]{
+    color: black;
+}
 .skills .cell .logo img{
     position: absolute;
     margin: 41px 41px;
@@ -282,6 +292,7 @@ section{
     width: 120px;
     
 }
+
 
 .skills .cell .logo img[alt="Blender logo no text"]{
     height: 98px;
@@ -292,25 +303,127 @@ section{
 .skills .cell .logo img[alt="Maya Logo"]{
     height: 110px;
     width: 110px;
-    margin: 45px 45px;
+    margin: 45px 47px;
 }
 
 .skills .cell .logo img[alt="CSS3 logo and wordmark"]{
-    height: 122px;
-    width: 86.5px;
-    margin: 38px 57px;
+    height: 120px;
+    width: 82px;
+    margin: 40px 60px;
 }
 .skills .cell .logo img[alt="JavaScript-logo"]{
     height: 105px;
     width: 105px;
     margin: 49px 49px;
 }
-
+.skills .cell .logo img[alt="Csharp Logo"]{
+    height: 230px;
+    width: 230px;
+    margin: -15px -12px;
+}
+.skills .cell .logo img[alt="ISO C++ Logo"]{
+    height: 135px;
+    width: 120px;
+    margin: 33px 43px;
+}
 .skills .cell .name{
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
-    
+}
+
+.contact{
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 243, 0, 0), yellow);
+}
+
+.contact .title{
+    color: red;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+    align-self: flex-start;
+}
+
+.contact .contact-content .text{
+    color: green;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.contact .contact-content p{
+    margin-left: 30px;
+}
+
+.contact .contact-content .left .info{
+    margin-left: 30px;
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.contact .contact-content .icons .row{
+    display: list-item;
+    margin-top: 20px;
+}
+.contact .contact-content .icons .row i{
+    color: red;
+    text-align: center;
+}
+.contact .contact-content .icons .row img{
+    fill: red;
+    zoom: 28%;
+}
+.contact .contact-content .left .head{
+    font-size: 110%;
+    font-weight: bolder;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left .sub-title{
+    font-size: 90%;
+    color: red;
+}
+.contact .contact-content .right form .fields{
+    display: flex;
+}
+.contact .contact-content .right form .field 
+,.contact .contact-content .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    padding: 3px;
+}
+.contact .contact-content .right form input
+,.contact .contact-content .right form textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-size: 17px;
+    background: green;
+    color: yellow;
+    font-family: 'Comfortaa';
+}
+.contact .contact-content .right form textarea{
+    width: 100%;
+    overflow-y: auto;
+    resize: none;
+    margin-bottom: 100%;
+    max-height: 300px;
+}
+.contact .contact-content .right form .button{
+    height: 47px;
+    width: 100%;
+    margin-top: 280px;
+}
+.contact .contact-content .right form .button button{
+    height: 100%;
+    width: 100%;
+}
+.contact .contact-content .right form input::placeholder
+,.contact .contact-content .right form textarea::placeholder{
+    color: rgba(255, 255, 0, 0.75);
 }
 /* responsive media query */
 @media(max-width: 1400px){
@@ -336,7 +449,7 @@ section{
         padding-left: 20px;
     }
     .skills .skill-title{
-        font-size: 25px;
+        font-size: 40px;
         padding: 10px 0 10px 0;
     }
     .skills .cell .name{
