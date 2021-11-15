@@ -369,6 +369,7 @@ section{
 .contact .contact-content .icons .row{
     display: list-item;
     margin-top: 20px;
+    padding-right: 30px;
 }
 .contact .contact-content .icons .row i{
     color: red;
@@ -441,12 +442,14 @@ section{
     color: yellow;
     font-size: 20px;
     font-weight: 500;
+    font-family: inherit;
     cursor: pointer;
 }
 .contact .contact-content .right form .button button:hover{
     color: green;
     border-color: red;
     background: rgba(0, 0, 0, 0);
+    font-weight: 900;
     transition: color 0.3s ease;
 }
 .contact .contact-content .right form input::placeholder
@@ -494,6 +497,7 @@ section{
 }
 
 @media(max-width: 1100px){
+
     .max-width{
         padding: 0 30px
     }
