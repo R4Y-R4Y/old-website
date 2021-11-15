@@ -364,6 +364,7 @@ section{
 .contact .contact-content .icons{
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
 }
 
 .contact .contact-content .icons .row{
@@ -376,7 +377,6 @@ section{
     text-align: center;
 }
 .contact .contact-content .icons .row svg{
-    fill: red;
     zoom: 30%;
 }
 .contact .contact-content .left .head{
@@ -568,5 +568,13 @@ section{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .contact .contact-content .left .info{
+        margin-left: 45px;
+        margin-top: -30px;
+        font-size: 20px;
+    }
+    .contact .contact-content .icons .row svg{
+        zoom: 40%;
     }
 }
