@@ -11,7 +11,28 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass('active')
         $('.menu-but i').toggleClass('fas fa-bars fas fa-times')
     });
-    
+
+    $('.carousel').owlCarousel({
+        margin: 40,
+        loop: true,
+        autoplay:true,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+        
+    })
 })
 function textAreaAdjust(element) {
     element.style.height = "1px";

@@ -133,7 +133,8 @@ section{
 .about .about-content
 ,.education .education-content
 ,.skills .skills-content
-,.contact .contact-content{
+,.contact .contact-content
+,.projects .projects-content{
     font-family: 'Comfortaa';
     display: flex;
     align-items: center;
@@ -220,6 +221,7 @@ section{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 
 .education .education-content .card .box{
     transition: all 0.3s ease;
@@ -332,9 +334,76 @@ section{
     margin-top: 20px;
 }
 
+.projects .projects-content{
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), yellow);
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    color: green;
+}
+
+.projects .projects-content .carousel .card{
+    background: rgba(9, 255, 0, 0.3);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    box-shadow: 0 0 5px 2px gray;
+    margin: 10px 0 10px 0;
+}
+.owl-carousel .owl-stage-outer {
+    height: calc(100% + 30px);
+    margin: -15px;
+    padding: 15px;
+    width: calc(100% + 30px);
+}
+.projects .projects-content .carousel{
+    margin: 150px 0 150px 0;
+    padding: 0 30px 0 30px;
+}
+
+.projects .projects-content .carousel .card i{
+    font-size: 140px;
+    background-clip: text;
+    background: linear-gradient(-45deg,red,red,red,green,yellow,yellow,yellow);
+    border-radius: 50%;
+    border: 5px solid yellow;
+    box-shadow: 0 0 5px 5px slategrey;
+    color: rgba(255, 0, 0, 0);
+}
+.projects .projects-content .carousel .card a:visited
+,.projects .projects-content .carousel .card a:hover{
+    color: green;
+}
+.projects .projects-content .carousel .card a:active{
+    color: red;
+}
+
+.projects .projects-content .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects .projects-content .carousel .card .name{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+.projects .projects-content .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    box-shadow: 0 0 5px 5px slategrey;
+
+}
+
 .contact{
     display: flex;
-    background: linear-gradient(to bottom, rgba(0, 243, 0, 0), yellow);
+    background: linear-gradient(to bottom, yellow,gold);
 }
 
 .contact .title{
